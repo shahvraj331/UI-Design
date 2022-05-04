@@ -33,4 +33,10 @@ class BaseTextButton: UIButton {
         }
     }
     
+    @IBInspectable var isSemiBold: Bool = false {
+        didSet {
+            titleLabel?.font = isSemiBold ? UIFont(name: "OpenSans-SemiBold", size: labelSize) : UIFont(name: "OpenSans-Regular", size: labelSize)
+        }
+    }
+    
 }//End of class

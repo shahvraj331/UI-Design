@@ -32,6 +32,12 @@ class BaseCoordinator: Coordinator {
         navController.pushViewController(signUpVC, animated: true)
     }
     
+    func startProfileScreen() {
+        let profileVC = ProfileViewController.instantiate(from: .profileStoryboard)
+        profileVC.coordinator = self
+        navController.pushViewController(profileVC, animated: true)
+    }
+    
     func finish() {
         navController.popViewController(animated: true)
     }
