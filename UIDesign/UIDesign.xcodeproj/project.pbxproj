@@ -10,10 +10,12 @@
 		A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01872820F2EF006EA498 /* BaseTextButton.swift */; };
 		A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */; };
 		A02D018C2820FFEB006EA498 /* LinksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D018B2820FFEB006EA498 /* LinksButton.swift */; };
-		A05825EC28227B8C004380E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05825EB28227B8C004380E0 /* R.generated.swift */; };
+		A02D018E2821080A006EA498 /* ViewControllerDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D018D2821080A006EA498 /* ViewControllerDefaults.swift */; };
+		A088413328251E080048B6FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A088413228251E080048B6FB /* Localizable.strings */; };
+		A088413728253E170048B6FB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088413628253E170048B6FB /* R.generated.swift */; };
 		A094380C281AC53A006DD758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380B281AC53A006DD758 /* AppDelegate.swift */; };
 		A094380E281AC53A006DD758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380D281AC53A006DD758 /* SceneDelegate.swift */; };
-		A0943810281AC53A006DD758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380F281AC53A006DD758 /* ViewController.swift */; };
+		A0943810281AC53A006DD758 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380F281AC53A006DD758 /* LoginViewController.swift */; };
 		A0943813281AC53A006DD758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0943811281AC53A006DD758 /* Main.storyboard */; };
 		A0943815281AC53D006DD758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0943814281AC53D006DD758 /* Assets.xcassets */; };
 		A0943818281AC53D006DD758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0943816281AC53D006DD758 /* LaunchScreen.storyboard */; };
@@ -95,11 +97,13 @@
 		A02D01872820F2EF006EA498 /* BaseTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextButton.swift; sourceTree = "<group>"; };
 		A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
 		A02D018B2820FFEB006EA498 /* LinksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksButton.swift; sourceTree = "<group>"; };
-		A05825EB28227B8C004380E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A02D018D2821080A006EA498 /* ViewControllerDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefaults.swift; sourceTree = "<group>"; };
+		A088413228251E080048B6FB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A088413628253E170048B6FB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A0943808281AC53A006DD758 /* UIDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A094380B281AC53A006DD758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A094380D281AC53A006DD758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A094380F281AC53A006DD758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A094380F281AC53A006DD758 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A0943812281AC53A006DD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0943814281AC53D006DD758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0943817281AC53D006DD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -210,6 +214,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A0063AE128291D2200D966AA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A0063AE228291D3500D966AA /* ViewControllers */,
+				A0063AE328291D6D00D966AA /* Storyboards */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A0063AE228291D3500D966AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A094380F281AC53A006DD758 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0063AE328291D6D00D966AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0943811281AC53A006DD758 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A02D018F28210994006EA498 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +251,14 @@
 				A02D018B2820FFEB006EA498 /* LinksButton.swift */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		A02D0190282109BC006EA498 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A02D018D2821080A006EA498 /* ViewControllerDefaults.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		A09437FF281AC53A006DD758 = {
@@ -249,16 +286,17 @@
 		A094380A281AC53A006DD758 /* UIDesign */ = {
 			isa = PBXGroup;
 			children = (
-				A05825EB28227B8C004380E0 /* R.generated.swift */,
 				A0D10AE7281FEBEB0079611F /* Open_Sans */,
+				A02D0190282109BC006EA498 /* Common */,
 				A02D018F28210994006EA498 /* CustomControls */,
+				A0063AE128291D2200D966AA /* Authentication */,
+				A088413228251E080048B6FB /* Localizable.strings */,
+				A088413628253E170048B6FB /* R.generated.swift */,
+				A0943814281AC53D006DD758 /* Assets.xcassets */,
 				A094380B281AC53A006DD758 /* AppDelegate.swift */,
 				A094380D281AC53A006DD758 /* SceneDelegate.swift */,
-				A094380F281AC53A006DD758 /* ViewController.swift */,
-				A0943811281AC53A006DD758 /* Main.storyboard */,
-				A0943814281AC53D006DD758 /* Assets.xcassets */,
-				A0943816281AC53D006DD758 /* LaunchScreen.storyboard */,
 				A0943819281AC53D006DD758 /* Info.plist */,
+				A0943816281AC53D006DD758 /* LaunchScreen.storyboard */,
 			);
 			path = UIDesign;
 			sourceTree = "<group>";
@@ -368,10 +406,10 @@
 			buildPhases = (
 				5208C31597201844F7C9F23D /* [CP] Check Pods Manifest.lock */,
 				A05825EA28227A98004380E0 /* ShellScript */,
+				14217BB94E4404F3A42D6D61 /* [CP] Embed Pods Frameworks */,
 				A0943804281AC53A006DD758 /* Sources */,
 				A0943805281AC53A006DD758 /* Frameworks */,
 				A0943806281AC53A006DD758 /* Resources */,
-				14217BB94E4404F3A42D6D61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,10 +444,10 @@
 			buildConfigurationList = A0943838281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesignUITests" */;
 			buildPhases = (
 				8779DD6B2E0EFD45AD41F179 /* [CP] Check Pods Manifest.lock */,
+				52547CD2532D82F75CDD6828 /* [CP] Embed Pods Frameworks */,
 				A0943824281AC53E006DD758 /* Sources */,
 				A0943825281AC53E006DD758 /* Frameworks */,
 				A0943826281AC53E006DD758 /* Resources */,
-				52547CD2532D82F75CDD6828 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,6 +520,7 @@
 				A0D10B33281FEBEB0079611F /* OpenSans-Bold.ttf in Resources */,
 				A0D10B32281FEBEB0079611F /* OpenSans-LightItalic.ttf in Resources */,
 				A0D10B36281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				A088413328251E080048B6FB /* Localizable.strings in Resources */,
 				A0943815281AC53D006DD758 /* Assets.xcassets in Resources */,
 				A0D10B20281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf in Resources */,
 				A0D10B38281FEBEB0079611F /* OpenSans-BoldItalic.ttf in Resources */,
@@ -660,15 +699,16 @@
 			files = (
 				A094383C281AC5E1006DD758 /* BaseButton.swift in Sources */,
 				A0D10B3D281FEDF90079611F /* BaseLabel.swift in Sources */,
-				A0943810281AC53A006DD758 /* ViewController.swift in Sources */,
+				A0943810281AC53A006DD758 /* LoginViewController.swift in Sources */,
 				A094380C281AC53A006DD758 /* AppDelegate.swift in Sources */,
+				A02D018E2821080A006EA498 /* ViewControllerDefaults.swift in Sources */,
 				A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */,
 				A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */,
 				A0D10B3F281FF3640079611F /* SemiBoldLabel.swift in Sources */,
 				A02D018C2820FFEB006EA498 /* LinksButton.swift in Sources */,
 				A094380E281AC53A006DD758 /* SceneDelegate.swift in Sources */,
-				A05825EC28227B8C004380E0 /* R.generated.swift in Sources */,
 				A094383E281AC92F006DD758 /* CustomTextField.swift in Sources */,
+				A088413728253E170048B6FB /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

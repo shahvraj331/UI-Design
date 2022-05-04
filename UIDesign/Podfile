@@ -7,6 +7,7 @@ target 'UIDesign' do
 
   # Pods for UIDesign
    pod 'R.swift' # R.swift for managing resources
+   pod "TPKeyboardAvoiding" #manage return keys for textfield and scrolling behaviour
   target 'UIDesignTests' do
     inherit! :search_paths
     # Pods for testing

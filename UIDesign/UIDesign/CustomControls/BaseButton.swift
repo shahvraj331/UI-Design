@@ -42,6 +42,13 @@ class BaseButton: UIButton {
         commonInit()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradient.removeFromSuperlayer()
+        gradient.frame = self.bounds
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+    
     //MARK: - IBInspectable
     @IBInspectable var fontSize: CGFloat = 12 {
         didSet {
@@ -63,7 +70,7 @@ class BaseButton: UIButton {
     
     //MARK: - Fileprivate functions
     fileprivate func commonInit() {
-        backgroundColor = UIColor(named: "buttonBackground")
+        self.layer.insertSublayer(gradient, at: 0)
     }
     
 }//End of class
