@@ -7,13 +7,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboarded {
 
+    //MARK: - Variables
+    var coordinator: BaseCoordinator?
+    
     //MARK: - Outlets
     @IBOutlet weak var btnRememberMe: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var btnLogin: BaseButton!
     
     //MARK: - UIViewController lifecycle
     override func viewDidLoad() {
@@ -26,8 +28,17 @@ class LoginViewController: UIViewController {
         sender.isSelected = !sender.isSelected
     }
     
+    @IBAction func signUpAction(_ sender: UIButton) {
+        coordinator?.startSignUpScreen()
+    }
+    
+    @IBAction func profileAction(_ sender: UIButton) {
+        //TODO: - Login validation
+    }
+    
     //MARK: - File private functions
     fileprivate func initViewController() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         btnRememberMe.layer.cornerRadius = 5.0
         btnRememberMe.layer.masksToBounds = true
@@ -40,7 +51,6 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == txtEmail {
-            textField.resignFirstResponder()
             txtPassword.becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
