@@ -34,7 +34,7 @@ class SignUpViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func signInAction(_ sender: BaseButton) {
-        //TODO: -  start profile activity
+        coordinator?.startProfileScreen()
     }
     
     //MARK: - File private functions
