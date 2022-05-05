@@ -1,0 +1,1037 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01872820F2EF006EA498 /* BaseTextButton.swift */; };
+		A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */; };
+		A02D018C2820FFEB006EA498 /* LinksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D018B2820FFEB006EA498 /* LinksButton.swift */; };
+		A05825EC28227B8C004380E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05825EB28227B8C004380E0 /* R.generated.swift */; };
+		A094380C281AC53A006DD758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380B281AC53A006DD758 /* AppDelegate.swift */; };
+		A094380E281AC53A006DD758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380D281AC53A006DD758 /* SceneDelegate.swift */; };
+		A0943810281AC53A006DD758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094380F281AC53A006DD758 /* ViewController.swift */; };
+		A0943813281AC53A006DD758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0943811281AC53A006DD758 /* Main.storyboard */; };
+		A0943815281AC53D006DD758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0943814281AC53D006DD758 /* Assets.xcassets */; };
+		A0943818281AC53D006DD758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0943816281AC53D006DD758 /* LaunchScreen.storyboard */; };
+		A0943823281AC53E006DD758 /* UIDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0943822281AC53E006DD758 /* UIDesignTests.swift */; };
+		A094382D281AC53E006DD758 /* UIDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094382C281AC53E006DD758 /* UIDesignUITests.swift */; };
+		A094382F281AC53E006DD758 /* UIDesignUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094382E281AC53E006DD758 /* UIDesignUITestsLaunchTests.swift */; };
+		A094383C281AC5E1006DD758 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094383B281AC5E1006DD758 /* BaseButton.swift */; };
+		A094383E281AC92F006DD758 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094383D281AC92F006DD758 /* CustomTextField.swift */; };
+		A0D10B14281FEBEB0079611F /* OpenSans-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AE8281FEBEB0079611F /* OpenSans-Italic-VariableFont_wdth,wght.ttf */; };
+		A0D10B15281FEBEB0079611F /* OpenSans_SemiCondensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AEB281FEBEB0079611F /* OpenSans_SemiCondensed-MediumItalic.ttf */; };
+		A0D10B16281FEBEB0079611F /* OpenSans_SemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AEC281FEBEB0079611F /* OpenSans_SemiCondensed-Regular.ttf */; };
+		A0D10B17281FEBEB0079611F /* OpenSans_SemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AED281FEBEB0079611F /* OpenSans_SemiCondensed-Bold.ttf */; };
+		A0D10B18281FEBEB0079611F /* OpenSans_SemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AEE281FEBEB0079611F /* OpenSans_SemiCondensed-Light.ttf */; };
+		A0D10B19281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AEF281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */; };
+		A0D10B1A281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF0281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBold.ttf */; };
+		A0D10B1B281FEBEB0079611F /* OpenSans_SemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF1281FEBEB0079611F /* OpenSans_SemiCondensed-Medium.ttf */; };
+		A0D10B1C281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF2281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBold.ttf */; };
+		A0D10B1D281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF3281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf */; };
+		A0D10B1E281FEBEB0079611F /* OpenSans_SemiCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF4281FEBEB0079611F /* OpenSans_SemiCondensed-Italic.ttf */; };
+		A0D10B1F281FEBEB0079611F /* OpenSans_SemiCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF5281FEBEB0079611F /* OpenSans_SemiCondensed-BoldItalic.ttf */; };
+		A0D10B20281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF6281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf */; };
+		A0D10B21281FEBEB0079611F /* OpenSans_Condensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF8281FEBEB0079611F /* OpenSans_Condensed-Medium.ttf */; };
+		A0D10B22281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AF9281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf */; };
+		A0D10B23281FEBEB0079611F /* OpenSans_Condensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFA281FEBEB0079611F /* OpenSans_Condensed-SemiBold.ttf */; };
+		A0D10B24281FEBEB0079611F /* OpenSans_Condensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFB281FEBEB0079611F /* OpenSans_Condensed-LightItalic.ttf */; };
+		A0D10B25281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFC281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf */; };
+		A0D10B26281FEBEB0079611F /* OpenSans_Condensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFD281FEBEB0079611F /* OpenSans_Condensed-Light.ttf */; };
+		A0D10B27281FEBEB0079611F /* OpenSans_Condensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFE281FEBEB0079611F /* OpenSans_Condensed-SemiBoldItalic.ttf */; };
+		A0D10B28281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10AFF281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf */; };
+		A0D10B29281FEBEB0079611F /* OpenSans_Condensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B00281FEBEB0079611F /* OpenSans_Condensed-MediumItalic.ttf */; };
+		A0D10B2A281FEBEB0079611F /* OpenSans_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B01281FEBEB0079611F /* OpenSans_Condensed-Regular.ttf */; };
+		A0D10B2B281FEBEB0079611F /* OpenSans_Condensed-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B02281FEBEB0079611F /* OpenSans_Condensed-ExtraBoldItalic.ttf */; };
+		A0D10B2C281FEBEB0079611F /* OpenSans_Condensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B03281FEBEB0079611F /* OpenSans_Condensed-Italic.ttf */; };
+		A0D10B2D281FEBEB0079611F /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B05281FEBEB0079611F /* OpenSans-SemiBold.ttf */; };
+		A0D10B2E281FEBEB0079611F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B06281FEBEB0079611F /* OpenSans-Light.ttf */; };
+		A0D10B2F281FEBEB0079611F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B07281FEBEB0079611F /* OpenSans-Italic.ttf */; };
+		A0D10B30281FEBEB0079611F /* OpenSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B08281FEBEB0079611F /* OpenSans-MediumItalic.ttf */; };
+		A0D10B31281FEBEB0079611F /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B09281FEBEB0079611F /* OpenSans-ExtraBold.ttf */; };
+		A0D10B32281FEBEB0079611F /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0A281FEBEB0079611F /* OpenSans-LightItalic.ttf */; };
+		A0D10B33281FEBEB0079611F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0B281FEBEB0079611F /* OpenSans-Bold.ttf */; };
+		A0D10B34281FEBEB0079611F /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0C281FEBEB0079611F /* OpenSans-SemiBoldItalic.ttf */; };
+		A0D10B35281FEBEB0079611F /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0D281FEBEB0079611F /* OpenSans-Medium.ttf */; };
+		A0D10B36281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0E281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf */; };
+		A0D10B37281FEBEB0079611F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B0F281FEBEB0079611F /* OpenSans-Regular.ttf */; };
+		A0D10B38281FEBEB0079611F /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B10281FEBEB0079611F /* OpenSans-BoldItalic.ttf */; };
+		A0D10B39281FEBEB0079611F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B11281FEBEB0079611F /* README.txt */; };
+		A0D10B3A281FEBEB0079611F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B12281FEBEB0079611F /* LICENSE.txt */; };
+		A0D10B3B281FEBEB0079611F /* OpenSans-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D10B13281FEBEB0079611F /* OpenSans-VariableFont_wdth,wght.ttf */; };
+		A0D10B3D281FEDF90079611F /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D10B3C281FEDF90079611F /* BaseLabel.swift */; };
+		A0D10B3F281FF3640079611F /* SemiBoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D10B3E281FF3640079611F /* SemiBoldLabel.swift */; };
+		DD5F03E2FC1958782467795F /* Pods_UIDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCA19CAC0BAE2D59B26C707 /* Pods_UIDesignTests.framework */; };
+		E3B1C558E095E0B65DE82244 /* Pods_UIDesign_UIDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86242708E73D82873C7FCF3 /* Pods_UIDesign_UIDesignUITests.framework */; };
+		EA7F2D624C2B2CAF125B0556 /* Pods_UIDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451CCF49DAFCA0D5E0778323 /* Pods_UIDesign.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A094381F281AC53E006DD758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0943800281AC53A006DD758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0943807281AC53A006DD758;
+			remoteInfo = UIDesign;
+		};
+		A0943829281AC53E006DD758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0943800281AC53A006DD758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0943807281AC53A006DD758;
+			remoteInfo = UIDesign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CA9FCEF53865564FCAE2B6D /* Pods-UIDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-UIDesignTests/Pods-UIDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		451CCF49DAFCA0D5E0778323 /* Pods_UIDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D4350F6B2BE0557DD2185C /* Pods-UIDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesignTests.release.xcconfig"; path = "Target Support Files/Pods-UIDesignTests/Pods-UIDesignTests.release.xcconfig"; sourceTree = "<group>"; };
+		75CE44575DCC295F437EB6ED /* Pods-UIDesign-UIDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign-UIDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8202CD2412E46A06F63471A8 /* Pods-UIDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign.debug.xcconfig"; path = "Target Support Files/Pods-UIDesign/Pods-UIDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		A02D01872820F2EF006EA498 /* BaseTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextButton.swift; sourceTree = "<group>"; };
+		A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
+		A02D018B2820FFEB006EA498 /* LinksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksButton.swift; sourceTree = "<group>"; };
+		A05825EB28227B8C004380E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A0943808281AC53A006DD758 /* UIDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A094380B281AC53A006DD758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A094380D281AC53A006DD758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A094380F281AC53A006DD758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0943812281AC53A006DD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0943814281AC53D006DD758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0943817281AC53D006DD758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0943819281AC53D006DD758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A094381E281AC53E006DD758 /* UIDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0943822281AC53E006DD758 /* UIDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignTests.swift; sourceTree = "<group>"; };
+		A0943828281AC53E006DD758 /* UIDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A094382C281AC53E006DD758 /* UIDesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignUITests.swift; sourceTree = "<group>"; };
+		A094382E281AC53E006DD758 /* UIDesignUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A094383B281AC5E1006DD758 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		A094383D281AC92F006DD758 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A0D10AE8281FEBEB0079611F /* OpenSans-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		A0D10AEB281FEBEB0079611F /* OpenSans_SemiCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AEC281FEBEB0079611F /* OpenSans_SemiCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		A0D10AED281FEBEB0079611F /* OpenSans_SemiCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		A0D10AEE281FEBEB0079611F /* OpenSans_SemiCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Light.ttf"; sourceTree = "<group>"; };
+		A0D10AEF281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AF0281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		A0D10AF1281FEBEB0079611F /* OpenSans_SemiCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		A0D10AF2281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A0D10AF3281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AF4281FEBEB0079611F /* OpenSans_SemiCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		A0D10AF5281FEBEB0079611F /* OpenSans_SemiCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AF6281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AF8281FEBEB0079611F /* OpenSans_Condensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Medium.ttf"; sourceTree = "<group>"; };
+		A0D10AF9281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A0D10AFA281FEBEB0079611F /* OpenSans_Condensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		A0D10AFB281FEBEB0079611F /* OpenSans_Condensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AFC281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Bold.ttf"; sourceTree = "<group>"; };
+		A0D10AFD281FEBEB0079611F /* OpenSans_Condensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Light.ttf"; sourceTree = "<group>"; };
+		A0D10AFE281FEBEB0079611F /* OpenSans_Condensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10AFF281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B00281FEBEB0079611F /* OpenSans_Condensed-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B01281FEBEB0079611F /* OpenSans_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Regular.ttf"; sourceTree = "<group>"; };
+		A0D10B02281FEBEB0079611F /* OpenSans_Condensed-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B03281FEBEB0079611F /* OpenSans_Condensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Italic.ttf"; sourceTree = "<group>"; };
+		A0D10B05281FEBEB0079611F /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		A0D10B06281FEBEB0079611F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		A0D10B07281FEBEB0079611F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		A0D10B08281FEBEB0079611F /* OpenSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B09281FEBEB0079611F /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A0D10B0A281FEBEB0079611F /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B0B281FEBEB0079611F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		A0D10B0C281FEBEB0079611F /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B0D281FEBEB0079611F /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		A0D10B0E281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B0F281FEBEB0079611F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		A0D10B10281FEBEB0079611F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A0D10B11281FEBEB0079611F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A0D10B12281FEBEB0079611F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A0D10B13281FEBEB0079611F /* OpenSans-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		A0D10B3C281FEDF90079611F /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		A0D10B3E281FF3640079611F /* SemiBoldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiBoldLabel.swift; sourceTree = "<group>"; };
+		ADCA19CAC0BAE2D59B26C707 /* Pods_UIDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B516189F9A8C5B4DF7142E48 /* Pods-UIDesign-UIDesignUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign-UIDesignUITests.release.xcconfig"; path = "Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C86242708E73D82873C7FCF3 /* Pods_UIDesign_UIDesignUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIDesign_UIDesignUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2F11AADB739FDD1E8B2742 /* Pods-UIDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign.release.xcconfig"; path = "Target Support Files/Pods-UIDesign/Pods-UIDesign.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0943805281AC53A006DD758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7F2D624C2B2CAF125B0556 /* Pods_UIDesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A094381B281AC53E006DD758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5F03E2FC1958782467795F /* Pods_UIDesignTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0943825281AC53E006DD758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B1C558E095E0B65DE82244 /* Pods_UIDesign_UIDesignUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48223C02E23C96CC05204C46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8202CD2412E46A06F63471A8 /* Pods-UIDesign.debug.xcconfig */,
+				EA2F11AADB739FDD1E8B2742 /* Pods-UIDesign.release.xcconfig */,
+				75CE44575DCC295F437EB6ED /* Pods-UIDesign-UIDesignUITests.debug.xcconfig */,
+				B516189F9A8C5B4DF7142E48 /* Pods-UIDesign-UIDesignUITests.release.xcconfig */,
+				2CA9FCEF53865564FCAE2B6D /* Pods-UIDesignTests.debug.xcconfig */,
+				57D4350F6B2BE0557DD2185C /* Pods-UIDesignTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B25365A21E079EE3CA4DCBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				451CCF49DAFCA0D5E0778323 /* Pods_UIDesign.framework */,
+				C86242708E73D82873C7FCF3 /* Pods_UIDesign_UIDesignUITests.framework */,
+				ADCA19CAC0BAE2D59B26C707 /* Pods_UIDesignTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A02D018F28210994006EA498 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				A094383B281AC5E1006DD758 /* BaseButton.swift */,
+				A094383D281AC92F006DD758 /* CustomTextField.swift */,
+				A0D10B3C281FEDF90079611F /* BaseLabel.swift */,
+				A0D10B3E281FF3640079611F /* SemiBoldLabel.swift */,
+				A02D01872820F2EF006EA498 /* BaseTextButton.swift */,
+				A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */,
+				A02D018B2820FFEB006EA498 /* LinksButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		A09437FF281AC53A006DD758 = {
+			isa = PBXGroup;
+			children = (
+				A094380A281AC53A006DD758 /* UIDesign */,
+				A0943821281AC53E006DD758 /* UIDesignTests */,
+				A094382B281AC53E006DD758 /* UIDesignUITests */,
+				A0943809281AC53A006DD758 /* Products */,
+				48223C02E23C96CC05204C46 /* Pods */,
+				6B25365A21E079EE3CA4DCBD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0943809281AC53A006DD758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0943808281AC53A006DD758 /* UIDesign.app */,
+				A094381E281AC53E006DD758 /* UIDesignTests.xctest */,
+				A0943828281AC53E006DD758 /* UIDesignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A094380A281AC53A006DD758 /* UIDesign */ = {
+			isa = PBXGroup;
+			children = (
+				A05825EB28227B8C004380E0 /* R.generated.swift */,
+				A0D10AE7281FEBEB0079611F /* Open_Sans */,
+				A02D018F28210994006EA498 /* CustomControls */,
+				A094380B281AC53A006DD758 /* AppDelegate.swift */,
+				A094380D281AC53A006DD758 /* SceneDelegate.swift */,
+				A094380F281AC53A006DD758 /* ViewController.swift */,
+				A0943811281AC53A006DD758 /* Main.storyboard */,
+				A0943814281AC53D006DD758 /* Assets.xcassets */,
+				A0943816281AC53D006DD758 /* LaunchScreen.storyboard */,
+				A0943819281AC53D006DD758 /* Info.plist */,
+			);
+			path = UIDesign;
+			sourceTree = "<group>";
+		};
+		A0943821281AC53E006DD758 /* UIDesignTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0943822281AC53E006DD758 /* UIDesignTests.swift */,
+			);
+			path = UIDesignTests;
+			sourceTree = "<group>";
+		};
+		A094382B281AC53E006DD758 /* UIDesignUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A094382C281AC53E006DD758 /* UIDesignUITests.swift */,
+				A094382E281AC53E006DD758 /* UIDesignUITestsLaunchTests.swift */,
+			);
+			path = UIDesignUITests;
+			sourceTree = "<group>";
+		};
+		A0D10AE7281FEBEB0079611F /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				A0D10AE8281FEBEB0079611F /* OpenSans-Italic-VariableFont_wdth,wght.ttf */,
+				A0D10AE9281FEBEB0079611F /* static */,
+				A0D10B11281FEBEB0079611F /* README.txt */,
+				A0D10B12281FEBEB0079611F /* LICENSE.txt */,
+				A0D10B13281FEBEB0079611F /* OpenSans-VariableFont_wdth,wght.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		A0D10AE9281FEBEB0079611F /* static */ = {
+			isa = PBXGroup;
+			children = (
+				A0D10AEA281FEBEB0079611F /* OpenSans_SemiCondensed */,
+				A0D10AF7281FEBEB0079611F /* OpenSans_Condensed */,
+				A0D10B04281FEBEB0079611F /* OpenSans */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		A0D10AEA281FEBEB0079611F /* OpenSans_SemiCondensed */ = {
+			isa = PBXGroup;
+			children = (
+				A0D10AEB281FEBEB0079611F /* OpenSans_SemiCondensed-MediumItalic.ttf */,
+				A0D10AEC281FEBEB0079611F /* OpenSans_SemiCondensed-Regular.ttf */,
+				A0D10AED281FEBEB0079611F /* OpenSans_SemiCondensed-Bold.ttf */,
+				A0D10AEE281FEBEB0079611F /* OpenSans_SemiCondensed-Light.ttf */,
+				A0D10AEF281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */,
+				A0D10AF0281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBold.ttf */,
+				A0D10AF1281FEBEB0079611F /* OpenSans_SemiCondensed-Medium.ttf */,
+				A0D10AF2281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBold.ttf */,
+				A0D10AF3281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf */,
+				A0D10AF4281FEBEB0079611F /* OpenSans_SemiCondensed-Italic.ttf */,
+				A0D10AF5281FEBEB0079611F /* OpenSans_SemiCondensed-BoldItalic.ttf */,
+				A0D10AF6281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf */,
+			);
+			path = OpenSans_SemiCondensed;
+			sourceTree = "<group>";
+		};
+		A0D10AF7281FEBEB0079611F /* OpenSans_Condensed */ = {
+			isa = PBXGroup;
+			children = (
+				A0D10AF8281FEBEB0079611F /* OpenSans_Condensed-Medium.ttf */,
+				A0D10AF9281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf */,
+				A0D10AFA281FEBEB0079611F /* OpenSans_Condensed-SemiBold.ttf */,
+				A0D10AFB281FEBEB0079611F /* OpenSans_Condensed-LightItalic.ttf */,
+				A0D10AFC281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf */,
+				A0D10AFD281FEBEB0079611F /* OpenSans_Condensed-Light.ttf */,
+				A0D10AFE281FEBEB0079611F /* OpenSans_Condensed-SemiBoldItalic.ttf */,
+				A0D10AFF281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf */,
+				A0D10B00281FEBEB0079611F /* OpenSans_Condensed-MediumItalic.ttf */,
+				A0D10B01281FEBEB0079611F /* OpenSans_Condensed-Regular.ttf */,
+				A0D10B02281FEBEB0079611F /* OpenSans_Condensed-ExtraBoldItalic.ttf */,
+				A0D10B03281FEBEB0079611F /* OpenSans_Condensed-Italic.ttf */,
+			);
+			path = OpenSans_Condensed;
+			sourceTree = "<group>";
+		};
+		A0D10B04281FEBEB0079611F /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				A0D10B05281FEBEB0079611F /* OpenSans-SemiBold.ttf */,
+				A0D10B06281FEBEB0079611F /* OpenSans-Light.ttf */,
+				A0D10B07281FEBEB0079611F /* OpenSans-Italic.ttf */,
+				A0D10B08281FEBEB0079611F /* OpenSans-MediumItalic.ttf */,
+				A0D10B09281FEBEB0079611F /* OpenSans-ExtraBold.ttf */,
+				A0D10B0A281FEBEB0079611F /* OpenSans-LightItalic.ttf */,
+				A0D10B0B281FEBEB0079611F /* OpenSans-Bold.ttf */,
+				A0D10B0C281FEBEB0079611F /* OpenSans-SemiBoldItalic.ttf */,
+				A0D10B0D281FEBEB0079611F /* OpenSans-Medium.ttf */,
+				A0D10B0E281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf */,
+				A0D10B0F281FEBEB0079611F /* OpenSans-Regular.ttf */,
+				A0D10B10281FEBEB0079611F /* OpenSans-BoldItalic.ttf */,
+			);
+			path = OpenSans;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0943807281AC53A006DD758 /* UIDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0943832281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesign" */;
+			buildPhases = (
+				5208C31597201844F7C9F23D /* [CP] Check Pods Manifest.lock */,
+				A05825EA28227A98004380E0 /* ShellScript */,
+				A0943804281AC53A006DD758 /* Sources */,
+				A0943805281AC53A006DD758 /* Frameworks */,
+				A0943806281AC53A006DD758 /* Resources */,
+				14217BB94E4404F3A42D6D61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIDesign;
+			productName = UIDesign;
+			productReference = A0943808281AC53A006DD758 /* UIDesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A094381D281AC53E006DD758 /* UIDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0943835281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesignTests" */;
+			buildPhases = (
+				E8E449DAD2683765FBB76B0B /* [CP] Check Pods Manifest.lock */,
+				A094381A281AC53E006DD758 /* Sources */,
+				A094381B281AC53E006DD758 /* Frameworks */,
+				A094381C281AC53E006DD758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0943820281AC53E006DD758 /* PBXTargetDependency */,
+			);
+			name = UIDesignTests;
+			productName = UIDesignTests;
+			productReference = A094381E281AC53E006DD758 /* UIDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0943827281AC53E006DD758 /* UIDesignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0943838281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesignUITests" */;
+			buildPhases = (
+				8779DD6B2E0EFD45AD41F179 /* [CP] Check Pods Manifest.lock */,
+				A0943824281AC53E006DD758 /* Sources */,
+				A0943825281AC53E006DD758 /* Frameworks */,
+				A0943826281AC53E006DD758 /* Resources */,
+				52547CD2532D82F75CDD6828 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A094382A281AC53E006DD758 /* PBXTargetDependency */,
+			);
+			name = UIDesignUITests;
+			productName = UIDesignUITests;
+			productReference = A0943828281AC53E006DD758 /* UIDesignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0943800281AC53A006DD758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A0943807281AC53A006DD758 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A094381D281AC53E006DD758 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A0943807281AC53A006DD758;
+					};
+					A0943827281AC53E006DD758 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A0943807281AC53A006DD758;
+					};
+				};
+			};
+			buildConfigurationList = A0943803281AC53A006DD758 /* Build configuration list for PBXProject "UIDesign" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A09437FF281AC53A006DD758;
+			productRefGroup = A0943809281AC53A006DD758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0943807281AC53A006DD758 /* UIDesign */,
+				A094381D281AC53E006DD758 /* UIDesignTests */,
+				A0943827281AC53E006DD758 /* UIDesignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0943806281AC53A006DD758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D10B34281FEBEB0079611F /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				A0D10B30281FEBEB0079611F /* OpenSans-MediumItalic.ttf in Resources */,
+				A0D10B27281FEBEB0079611F /* OpenSans_Condensed-SemiBoldItalic.ttf in Resources */,
+				A0D10B1A281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBold.ttf in Resources */,
+				A0D10B18281FEBEB0079611F /* OpenSans_SemiCondensed-Light.ttf in Resources */,
+				A0D10B2D281FEBEB0079611F /* OpenSans-SemiBold.ttf in Resources */,
+				A0D10B3A281FEBEB0079611F /* LICENSE.txt in Resources */,
+				A0D10B17281FEBEB0079611F /* OpenSans_SemiCondensed-Bold.ttf in Resources */,
+				A0943818281AC53D006DD758 /* LaunchScreen.storyboard in Resources */,
+				A0D10B23281FEBEB0079611F /* OpenSans_Condensed-SemiBold.ttf in Resources */,
+				A0D10B33281FEBEB0079611F /* OpenSans-Bold.ttf in Resources */,
+				A0D10B32281FEBEB0079611F /* OpenSans-LightItalic.ttf in Resources */,
+				A0D10B36281FEBEB0079611F /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				A0943815281AC53D006DD758 /* Assets.xcassets in Resources */,
+				A0D10B20281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBoldItalic.ttf in Resources */,
+				A0D10B38281FEBEB0079611F /* OpenSans-BoldItalic.ttf in Resources */,
+				A0D10B19281FEBEB0079611F /* OpenSans_SemiCondensed-SemiBoldItalic.ttf in Resources */,
+				A0D10B39281FEBEB0079611F /* README.txt in Resources */,
+				A0D10B16281FEBEB0079611F /* OpenSans_SemiCondensed-Regular.ttf in Resources */,
+				A0D10B3B281FEBEB0079611F /* OpenSans-VariableFont_wdth,wght.ttf in Resources */,
+				A0D10B2A281FEBEB0079611F /* OpenSans_Condensed-Regular.ttf in Resources */,
+				A0D10B14281FEBEB0079611F /* OpenSans-Italic-VariableFont_wdth,wght.ttf in Resources */,
+				A0D10B24281FEBEB0079611F /* OpenSans_Condensed-LightItalic.ttf in Resources */,
+				A0D10B25281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf in Resources */,
+				A0D10B1D281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf in Resources */,
+				A0D10B28281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf in Resources */,
+				A0D10B2F281FEBEB0079611F /* OpenSans-Italic.ttf in Resources */,
+				A0D10B22281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf in Resources */,
+				A0D10B2E281FEBEB0079611F /* OpenSans-Light.ttf in Resources */,
+				A0D10B35281FEBEB0079611F /* OpenSans-Medium.ttf in Resources */,
+				A0D10B1F281FEBEB0079611F /* OpenSans_SemiCondensed-BoldItalic.ttf in Resources */,
+				A0D10B1B281FEBEB0079611F /* OpenSans_SemiCondensed-Medium.ttf in Resources */,
+				A0D10B31281FEBEB0079611F /* OpenSans-ExtraBold.ttf in Resources */,
+				A0D10B21281FEBEB0079611F /* OpenSans_Condensed-Medium.ttf in Resources */,
+				A0D10B1C281FEBEB0079611F /* OpenSans_SemiCondensed-ExtraBold.ttf in Resources */,
+				A0D10B29281FEBEB0079611F /* OpenSans_Condensed-MediumItalic.ttf in Resources */,
+				A0D10B26281FEBEB0079611F /* OpenSans_Condensed-Light.ttf in Resources */,
+				A0D10B1E281FEBEB0079611F /* OpenSans_SemiCondensed-Italic.ttf in Resources */,
+				A0D10B2B281FEBEB0079611F /* OpenSans_Condensed-ExtraBoldItalic.ttf in Resources */,
+				A0D10B2C281FEBEB0079611F /* OpenSans_Condensed-Italic.ttf in Resources */,
+				A0943813281AC53A006DD758 /* Main.storyboard in Resources */,
+				A0D10B37281FEBEB0079611F /* OpenSans-Regular.ttf in Resources */,
+				A0D10B15281FEBEB0079611F /* OpenSans_SemiCondensed-MediumItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A094381C281AC53E006DD758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0943826281AC53E006DD758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14217BB94E4404F3A42D6D61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIDesign/Pods-UIDesign-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIDesign/Pods-UIDesign-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIDesign/Pods-UIDesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5208C31597201844F7C9F23D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIDesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52547CD2532D82F75CDD6828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8779DD6B2E0EFD45AD41F179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIDesign-UIDesignUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05825EA28227A98004380E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		E8E449DAD2683765FBB76B0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIDesignTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0943804281AC53A006DD758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A094383C281AC5E1006DD758 /* BaseButton.swift in Sources */,
+				A0D10B3D281FEDF90079611F /* BaseLabel.swift in Sources */,
+				A0943810281AC53A006DD758 /* ViewController.swift in Sources */,
+				A094380C281AC53A006DD758 /* AppDelegate.swift in Sources */,
+				A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */,
+				A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */,
+				A0D10B3F281FF3640079611F /* SemiBoldLabel.swift in Sources */,
+				A02D018C2820FFEB006EA498 /* LinksButton.swift in Sources */,
+				A094380E281AC53A006DD758 /* SceneDelegate.swift in Sources */,
+				A05825EC28227B8C004380E0 /* R.generated.swift in Sources */,
+				A094383E281AC92F006DD758 /* CustomTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A094381A281AC53E006DD758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0943823281AC53E006DD758 /* UIDesignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0943824281AC53E006DD758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A094382F281AC53E006DD758 /* UIDesignUITestsLaunchTests.swift in Sources */,
+				A094382D281AC53E006DD758 /* UIDesignUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0943820281AC53E006DD758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0943807281AC53A006DD758 /* UIDesign */;
+			targetProxy = A094381F281AC53E006DD758 /* PBXContainerItemProxy */;
+		};
+		A094382A281AC53E006DD758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0943807281AC53A006DD758 /* UIDesign */;
+			targetProxy = A0943829281AC53E006DD758 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0943811281AC53A006DD758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0943812281AC53A006DD758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0943816281AC53D006DD758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0943817281AC53D006DD758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0943830281AC53E006DD758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0943831281AC53E006DD758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0943833281AC53E006DD758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8202CD2412E46A06F63471A8 /* Pods-UIDesign.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIDesign/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0943834281AC53E006DD758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2F11AADB739FDD1E8B2742 /* Pods-UIDesign.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIDesign/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0943836281AC53E006DD758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA9FCEF53865564FCAE2B6D /* Pods-UIDesignTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIDesign.app/UIDesign";
+			};
+			name = Debug;
+		};
+		A0943837281AC53E006DD758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D4350F6B2BE0557DD2185C /* Pods-UIDesignTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIDesign.app/UIDesign";
+			};
+			name = Release;
+		};
+		A0943839281AC53E006DD758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75CE44575DCC295F437EB6ED /* Pods-UIDesign-UIDesignUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIDesign;
+			};
+			name = Debug;
+		};
+		A094383A281AC53E006DD758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B516189F9A8C5B4DF7142E48 /* Pods-UIDesign-UIDesignUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrajshah.UIDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIDesign;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0943803281AC53A006DD758 /* Build configuration list for PBXProject "UIDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0943830281AC53E006DD758 /* Debug */,
+				A0943831281AC53E006DD758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0943832281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0943833281AC53E006DD758 /* Debug */,
+				A0943834281AC53E006DD758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0943835281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0943836281AC53E006DD758 /* Debug */,
+				A0943837281AC53E006DD758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0943838281AC53E006DD758 /* Build configuration list for PBXNativeTarget "UIDesignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0943839281AC53E006DD758 /* Debug */,
+				A094383A281AC53E006DD758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0943800281AC53A006DD758 /* Project object */;
+}
