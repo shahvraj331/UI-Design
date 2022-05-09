@@ -23,7 +23,7 @@ class LinksButton: UIButton {
         }
     }
     
-    // MARK: - Class functions
+    //MARK: - Class functions
     func linkStrings() {
         let mainString = NSMutableAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor : UIColor(red: 0.494, green: 0.482, blue: 0.592, alpha: 1), NSAttributedString.Key.font : UIFont(name: "OpenSans-Regular", size: 12) ?? UIFont.systemFont(ofSize: 14)])
         let coloredString = NSAttributedString(string: link, attributes: [NSAttributedString.Key.foregroundColor : UIColor.blue, NSAttributedString.Key.font : UIFont(name: "OpenSans-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12)])

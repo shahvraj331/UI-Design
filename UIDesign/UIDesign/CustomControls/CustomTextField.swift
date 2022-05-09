@@ -82,7 +82,12 @@ class CustomTextField: UITextField {
             imageView.image = image
             eyeButton.setImage(image, for: .normal)
             rightView = eyeButton
-            eyeButton.addTarget(self, action: #selector(changePasswordSecurity), for: .touchUpInside)
+            switch (image.pngData()) {
+            case R.image.icon_eye()?.pngData():
+                eyeButton.addTarget(self, action: #selector(changePasswordSecurity), for: .touchUpInside)
+            default:
+                return
+            }
         } else {
             rightViewMode = UITextField.ViewMode.never
             rightView = nil
