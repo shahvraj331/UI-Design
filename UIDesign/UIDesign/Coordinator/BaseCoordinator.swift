@@ -15,6 +15,12 @@ class BaseCoordinator: Coordinator {
     }
     
     func start() {
+        let tutorialVC = TutorialViewController.instantiate(from: .tutorialStoryboard)
+        tutorialVC.coordinator = self
+        navController.pushViewController(tutorialVC, animated: true)
+    }
+    
+    func startLogInScreen() {
         let loginVC = LoginViewController.instantiate(from: .main)
         loginVC.coordinator = self
         navController.pushViewController(loginVC, animated: true)

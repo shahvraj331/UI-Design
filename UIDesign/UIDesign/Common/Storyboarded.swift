@@ -10,6 +10,7 @@ import UIKit
 /// Storyboards
 enum Storyboard: String {
     case main = "Main"
+    case tutorialStoryboard = "TutorialStoryboard"
 }
 
 /// Storyboarded

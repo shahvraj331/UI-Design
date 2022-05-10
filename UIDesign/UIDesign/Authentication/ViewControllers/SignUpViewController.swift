@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController, Storyboarded {
 
     //MARK: - UIViewController lifecycle
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         initViewController()
     }
 
@@ -31,6 +31,10 @@ class SignUpViewController: UIViewController, Storyboarded {
     
     @IBAction func signUpAction(_ sender: UIButton) {
         coordinator?.finish()
+    }
+    
+    @IBAction func signInAction(_ sender: BaseButton) {
+        //TODO: -  start profile activity
     }
     
     //MARK: - File private functions

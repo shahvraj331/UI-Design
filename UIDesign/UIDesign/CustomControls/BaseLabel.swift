@@ -27,7 +27,7 @@ class BaseLabel: UILabel {
     //MARK: - IBInspectables
     @IBInspectable var textSize: CGFloat = 12.0 {
         didSet {
-            font = UIFont(name: "OpenSans-Regular", size: textSize)
+            updateLabel()
         }
     }
     
