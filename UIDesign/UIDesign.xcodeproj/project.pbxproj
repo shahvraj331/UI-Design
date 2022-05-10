@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0063AEC2829265F00D966AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063AEA2829265F00D966AA /* LoginViewController.swift */; };
-		A0063AED2829265F00D966AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063AEB2829265F00D966AA /* SignUpViewController.swift */; };
 		A0063AF02829267000D966AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0063AEE2829267000D966AA /* Main.storyboard */; };
 		A0063AF428293AF500D966AA /* ViewControllerDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063AF228293AF500D966AA /* ViewControllerDefaults.swift */; };
-		A0063AF528293AF500D966AA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063AF328293AF500D966AA /* Storyboarded.swift */; };
+		A0063B0828293E8000D966AA /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0063AFF28293E8000D966AA /* ProfileStoryboard.storyboard */; };
+		A0063B0A28293E8000D966AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063B0128293E8000D966AA /* ProfileViewController.swift */; };
+		A0063B1128293F3E00D966AA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063B0E28293F3D00D966AA /* Storyboarded.swift */; };
+		A0063B1228293F3E00D966AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063B0F28293F3E00D966AA /* LoginViewController.swift */; };
+		A0063B1328293F3E00D966AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063B1028293F3E00D966AA /* SignUpViewController.swift */; };
+		A0063B1528293F8900D966AA /* WhiteRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0063B1428293F8900D966AA /* WhiteRoundButton.swift */; };
 		A024949D2824DD6500C97E84 /* TutorialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A024949C2824DD6500C97E84 /* TutorialData.swift */; };
 		A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01872820F2EF006EA498 /* BaseTextButton.swift */; };
 		A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */; };
@@ -104,11 +107,14 @@
 		57D4350F6B2BE0557DD2185C /* Pods-UIDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesignTests.release.xcconfig"; path = "Target Support Files/Pods-UIDesignTests/Pods-UIDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		75CE44575DCC295F437EB6ED /* Pods-UIDesign-UIDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign-UIDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIDesign-UIDesignUITests/Pods-UIDesign-UIDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8202CD2412E46A06F63471A8 /* Pods-UIDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign.debug.xcconfig"; path = "Target Support Files/Pods-UIDesign/Pods-UIDesign.debug.xcconfig"; sourceTree = "<group>"; };
-		A0063AEA2829265F00D966AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A0063AEB2829265F00D966AA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A0063AEF2829267000D966AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0063AF228293AF500D966AA /* ViewControllerDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDefaults.swift; sourceTree = "<group>"; };
-		A0063AF328293AF500D966AA /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		A0063AFF28293E8000D966AA /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		A0063B0128293E8000D966AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A0063B0E28293F3D00D966AA /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		A0063B0F28293F3E00D966AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A0063B1028293F3E00D966AA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A0063B1428293F8900D966AA /* WhiteRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteRoundButton.swift; sourceTree = "<group>"; };
 		A024949C2824DD6500C97E84 /* TutorialData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialData.swift; sourceTree = "<group>"; };
 		A02D01872820F2EF006EA498 /* BaseTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextButton.swift; sourceTree = "<group>"; };
 		A02D01892820F5FB006EA498 /* SocialMediaLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginButton.swift; sourceTree = "<group>"; };
@@ -246,8 +252,8 @@
 		A0063AE228291D3500D966AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0063AEA2829265F00D966AA /* LoginViewController.swift */,
-				A0063AEB2829265F00D966AA /* SignUpViewController.swift */,
+				A0063B0F28293F3E00D966AA /* LoginViewController.swift */,
+				A0063B1028293F3E00D966AA /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A0063AF228293AF500D966AA /* ViewControllerDefaults.swift */,
-				A0063AF328293AF500D966AA /* Storyboarded.swift */,
+				A0063B0E28293F3D00D966AA /* Storyboarded.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -303,6 +309,31 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		A0063B162829400300D966AA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A0063B172829401000D966AA /* ViewControllers */,
+				A0063B182829401700D966AA /* Storyboards */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A0063B172829401000D966AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0063B0128293E8000D966AA /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0063B182829401700D966AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0063AFF28293E8000D966AA /* ProfileStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A024949B2824DD3700C97E84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +345,7 @@
 		A02D018F28210994006EA498 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				A0063B1428293F8900D966AA /* WhiteRoundButton.swift */,
 				A094383B281AC5E1006DD758 /* BaseButton.swift */,
 				A094383D281AC92F006DD758 /* CustomTextField.swift */,
 				A0D10B3C281FEDF90079611F /* BaseLabel.swift */,
@@ -368,6 +400,7 @@
 				A04055372821521F006C2C4F /* Coordinator */,
 				A0063AE128291D2200D966AA /* Authentication */,
 				A0063AF628293B3500D966AA /* Tutorial */,
+				A0063B162829400300D966AA /* Profile */,
 				A094380B281AC53A006DD758 /* AppDelegate.swift */,
 				A094380D281AC53A006DD758 /* SceneDelegate.swift */,
 				A088413928254F2E0048B6FB /* Localizable.strings */,
@@ -612,6 +645,7 @@
 				A0D10B25281FEBEB0079611F /* OpenSans_Condensed-Bold.ttf in Resources */,
 				A0D10B1D281FEBEB0079611F /* OpenSans_SemiCondensed-LightItalic.ttf in Resources */,
 				A0D10B28281FEBEB0079611F /* OpenSans_Condensed-BoldItalic.ttf in Resources */,
+				A0063B0828293E8000D966AA /* ProfileStoryboard.storyboard in Resources */,
 				A0D10B2F281FEBEB0079611F /* OpenSans-Italic.ttf in Resources */,
 				A0D10B22281FEBEB0079611F /* OpenSans_Condensed-ExtraBold.ttf in Resources */,
 				A0D10B2E281FEBEB0079611F /* OpenSans-Light.ttf in Resources */,
@@ -780,15 +814,18 @@
 				A0D10B3D281FEDF90079611F /* BaseLabel.swift in Sources */,
 				A05825EC28227B8C004380E0 /* R.generated.swift in Sources */,
 				A040553928215233006C2C4F /* Coordinator.swift in Sources */,
+				A0063B1528293F8900D966AA /* WhiteRoundButton.swift in Sources */,
+				A0063B1328293F3E00D966AA /* SignUpViewController.swift in Sources */,
 				A0B0CC3B282292DE00CD3C5A /* BoldLabel.swift in Sources */,
-				A0063AED2829265F00D966AA /* SignUpViewController.swift in Sources */,
 				A094380C281AC53A006DD758 /* AppDelegate.swift in Sources */,
 				A040553B2821526B006C2C4F /* AppCoordinator.swift in Sources */,
 				A02D01882820F2EF006EA498 /* BaseTextButton.swift in Sources */,
-				A0063AEC2829265F00D966AA /* LoginViewController.swift in Sources */,
+				A0063B0A28293E8000D966AA /* ProfileViewController.swift in Sources */,
 				A02D018A2820F5FB006EA498 /* SocialMediaLoginButton.swift in Sources */,
+				A0063B1228293F3E00D966AA /* LoginViewController.swift in Sources */,
 				A040553D282152AF006C2C4F /* BaseCoordinator.swift in Sources */,
 				A0B0CC3F282296AC00CD3C5A /* TutorialCollectionViewCell.swift in Sources */,
+				A0063B1128293F3E00D966AA /* Storyboarded.swift in Sources */,
 				A0B0CC3D282295D600CD3C5A /* TutorialViewController.swift in Sources */,
 				A0063AF428293AF500D966AA /* ViewControllerDefaults.swift in Sources */,
 				A024949D2824DD6500C97E84 /* TutorialData.swift in Sources */,
@@ -796,7 +833,6 @@
 				A02D018C2820FFEB006EA498 /* LinksButton.swift in Sources */,
 				A094380E281AC53A006DD758 /* SceneDelegate.swift in Sources */,
 				A094383E281AC92F006DD758 /* CustomTextField.swift in Sources */,
-				A0063AF528293AF500D966AA /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

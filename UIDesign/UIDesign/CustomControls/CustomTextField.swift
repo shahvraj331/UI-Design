@@ -68,6 +68,8 @@ class CustomTextField: UITextField {
     //MARK: - Class functions
     func initTextfield() {
         layer.shadowOffset = CGSize(width: 0, height: 4.0)
+        backgroundColor = UIColor.white
+        layer.masksToBounds = false
         layer.shadowRadius = 5.0
         layer.shadowOpacity = 1.0
         layer.shadowColor = UIColor(red: 0.6, green: 0.67, blue: 0.78, alpha: 0.18).cgColor

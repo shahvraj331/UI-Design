@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func profileAction(_ sender: UIButton) {
-        //TODO: - Login validation
+        coordinator?.startProfileScreen()
     }
     
     //MARK: - File private functions
