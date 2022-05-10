@@ -26,7 +26,7 @@ class BaseButton: UIButton {
         gradient.shadowColor = UIColor(red: 0.6, green: 0.67, blue: 0.78, alpha: 0.18).cgColor
         gradient.shadowOffset = CGSize(width: 0, height: 4.0)
         gradient.shadowRadius = 5.0
-        gradient.masksToBounds = false
+        gradient.masksToBounds = true
         gradient.locations = [0.0, 1.0]
         return gradient
     }()
