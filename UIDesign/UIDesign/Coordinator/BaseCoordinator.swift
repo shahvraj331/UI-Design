@@ -15,9 +15,15 @@ class BaseCoordinator: Coordinator {
     }
     
     func start() {
-        let tutorialVC = TutorialViewController.instantiate(from: .tutorialStoryboard)
-        tutorialVC.coordinator = self
-        navController.pushViewController(tutorialVC, animated: true)
+        if (UserDefaults.standard.isTutorialCompleted() && UserDefaults.standard.isUserLoggedIn()) {
+            startProfileScreen()
+        } else if (UserDefaults.standard.isTutorialCompleted() && !UserDefaults.standard.isUserLoggedIn()) {
+            startLogInScreen()
+        } else {
+            let tutorialVC = TutorialViewController.instantiate(from: .tutorialStoryboard)
+            tutorialVC.coordinator = self
+            navController.pushViewController(tutorialVC, animated: true)
+        }
     }
     
     func startLogInScreen() {

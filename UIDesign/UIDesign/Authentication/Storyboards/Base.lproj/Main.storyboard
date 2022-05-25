@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +27,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58m-Da-48o">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru0-8r-QKC" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -257,6 +257,10 @@
                                                     <action selector="signUpAction:" destination="tkK-GH-fPI" eventType="touchUpInside" id="tEC-zt-kag"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="6rW-OS-ahu">
+                                                <rect key="frame" x="20" y="545.66666666666663" width="335" height="50"/>
+                                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Khy-6k-FeR" firstAttribute="top" secondItem="Ch4-YB-el8" secondAttribute="bottom" constant="40" id="0xI-ED-Q1b"/>
@@ -268,8 +272,11 @@
                                             <constraint firstItem="dGG-4b-JUp" firstAttribute="leading" secondItem="OAN-yg-3RH" secondAttribute="leading" constant="137" id="D2v-mk-Dxj"/>
                                             <constraint firstItem="Khy-6k-FeR" firstAttribute="leading" secondItem="OAN-yg-3RH" secondAttribute="leading" constant="20" id="DLe-hC-4lG"/>
                                             <constraint firstAttribute="trailing" secondItem="Ch4-YB-el8" secondAttribute="trailing" constant="20" id="LR2-sA-0V4"/>
+                                            <constraint firstItem="6rW-OS-ahu" firstAttribute="trailing" secondItem="9QD-eb-XiM" secondAttribute="trailing" id="MDl-YT-8a1"/>
                                             <constraint firstAttribute="trailing" secondItem="dGG-4b-JUp" secondAttribute="trailing" constant="137" id="NcN-ZS-pXZ"/>
+                                            <constraint firstItem="6rW-OS-ahu" firstAttribute="top" secondItem="9QD-eb-XiM" secondAttribute="top" id="diP-Yi-Iow"/>
                                             <constraint firstItem="Wv5-lp-tic" firstAttribute="leading" secondItem="OAN-yg-3RH" secondAttribute="leading" constant="20" symbolic="YES" id="gDf-25-OfS"/>
+                                            <constraint firstItem="6rW-OS-ahu" firstAttribute="bottom" secondItem="9QD-eb-XiM" secondAttribute="bottom" id="hHa-dm-XLt"/>
                                             <constraint firstItem="O0c-cV-HvS" firstAttribute="top" secondItem="vef-7p-HVD" secondAttribute="bottom" constant="48.000000000000057" id="jc4-hX-Y23"/>
                                             <constraint firstItem="vwS-Ia-bwx" firstAttribute="leading" secondItem="OAN-yg-3RH" secondAttribute="leading" constant="65" id="l2s-IL-6pn"/>
                                             <constraint firstItem="Ch4-YB-el8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wv5-lp-tic" secondAttribute="trailing" constant="8" symbolic="YES" id="mY3-Im-SCM"/>
@@ -280,6 +287,7 @@
                                             <constraint firstItem="Wv5-lp-tic" firstAttribute="top" secondItem="O0c-cV-HvS" secondAttribute="bottom" constant="20.000000000000114" id="sO9-HV-cto"/>
                                             <constraint firstItem="dGG-4b-JUp" firstAttribute="top" secondItem="OAN-yg-3RH" secondAttribute="top" constant="54" id="x41-Id-XNP"/>
                                             <constraint firstAttribute="trailing" secondItem="vef-7p-HVD" secondAttribute="trailing" constant="40" id="xj2-7z-qZE"/>
+                                            <constraint firstItem="6rW-OS-ahu" firstAttribute="leading" secondItem="9QD-eb-XiM" secondAttribute="leading" id="zro-JI-n1t"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -293,7 +301,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZl-tQ-J2f"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="baseBackground"/>
                         <constraints>
                             <constraint firstItem="58m-Da-48o" firstAttribute="top" secondItem="ieX-vI-1Rt" secondAttribute="top" id="1Rm-44-yS6"/>
                             <constraint firstItem="yZl-tQ-J2f" firstAttribute="trailing" secondItem="ru0-8r-QKC" secondAttribute="trailing" id="6w0-Yc-Dfr"/>
@@ -306,6 +314,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="6rW-OS-ahu" id="2Rz-rp-hj8"/>
+                        <outlet property="btnLogin" destination="9QD-eb-XiM" id="jte-KP-aWl"/>
                         <outlet property="btnRememberMe" destination="Kwb-u3-un5" id="UTQ-g2-RuN"/>
                         <outlet property="txtEmail" destination="4gS-WM-oZB" id="SGx-F0-qk9"/>
                         <outlet property="txtPassword" destination="j4C-FR-3zK" id="AYI-Jl-wVV"/>
@@ -325,7 +335,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVE-JD-0SI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqB-uq-LLa" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -524,7 +533,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="04U-fq-zPB">
                                                 <rect key="frame" x="20" y="636.33333333333337" width="335" height="115"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFD-JN-SOD" userLabel="Login" customClass="BaseButton" customModule="UIDesign" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFD-JN-SOD" userLabel="SignUp" customClass="BaseButton" customModule="UIDesign" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="enC-p7-gke"/>
@@ -588,10 +597,16 @@
                                                     <action selector="signUpAction:" destination="XUH-xM-Hup" eventType="touchUpInside" id="Lz5-Za-Hvb"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-Tw-9Gi">
+                                                <rect key="frame" x="20" y="636.33333333333337" width="335" height="50"/>
+                                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="bvP-mx-OlO" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="65" id="3XF-Xe-VHe"/>
                                             <constraint firstAttribute="trailing" secondItem="dNn-pm-TXQ" secondAttribute="trailing" constant="40" id="49G-0g-hre"/>
+                                            <constraint firstItem="RX9-Tw-9Gi" firstAttribute="trailing" secondItem="jFD-JN-SOD" secondAttribute="trailing" id="5Ty-rp-xgP"/>
+                                            <constraint firstItem="RX9-Tw-9Gi" firstAttribute="leading" secondItem="jFD-JN-SOD" secondAttribute="leading" id="66y-Ej-Ci3"/>
                                             <constraint firstItem="dNn-pm-TXQ" firstAttribute="top" secondItem="bUG-5i-Vlk" secondAttribute="bottom" constant="20" id="Br8-e7-EfF"/>
                                             <constraint firstItem="bvP-mx-OlO" firstAttribute="top" secondItem="04U-fq-zPB" secondAttribute="bottom" constant="105" id="FWm-Zn-fIt"/>
                                             <constraint firstItem="6kh-4k-IOD" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="20" symbolic="YES" id="IBh-YL-duf"/>
@@ -601,11 +616,13 @@
                                             <constraint firstItem="XM0-5G-B3m" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="20" id="UnX-uc-IRl"/>
                                             <constraint firstItem="6kh-4k-IOD" firstAttribute="top" secondItem="XM0-5G-B3m" secondAttribute="bottom" constant="20.000000000000114" id="Vrx-bp-r4P"/>
                                             <constraint firstItem="akb-NR-bP9" firstAttribute="top" secondItem="QNn-80-bzV" secondAttribute="bottom" constant="24" id="WIp-mh-55S"/>
+                                            <constraint firstItem="RX9-Tw-9Gi" firstAttribute="bottom" secondItem="jFD-JN-SOD" secondAttribute="bottom" id="WSV-fv-lK1"/>
                                             <constraint firstItem="bUG-5i-Vlk" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="137" id="Wu6-HE-HEy"/>
                                             <constraint firstItem="akb-NR-bP9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6kh-4k-IOD" secondAttribute="trailing" constant="8" symbolic="YES" id="bki-UU-Y9q"/>
                                             <constraint firstItem="bUG-5i-Vlk" firstAttribute="top" secondItem="2A6-nU-mvt" secondAttribute="top" constant="54" id="cfi-N0-bIj"/>
                                             <constraint firstItem="04U-fq-zPB" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="20" id="cjM-JN-oCT"/>
                                             <constraint firstAttribute="bottom" secondItem="bvP-mx-OlO" secondAttribute="bottom" id="fMr-tN-zeg"/>
+                                            <constraint firstItem="RX9-Tw-9Gi" firstAttribute="top" secondItem="jFD-JN-SOD" secondAttribute="top" id="gpH-bN-8s2"/>
                                             <constraint firstAttribute="trailing" secondItem="04U-fq-zPB" secondAttribute="trailing" constant="20" id="hjl-1J-pKI"/>
                                             <constraint firstItem="dNn-pm-TXQ" firstAttribute="leading" secondItem="2A6-nU-mvt" secondAttribute="leading" constant="40" id="qzm-Hn-Mrk"/>
                                             <constraint firstAttribute="trailing" secondItem="XM0-5G-B3m" secondAttribute="trailing" constant="20" id="sZ3-CX-Ll7"/>
@@ -624,7 +641,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6yh-m8-KTU"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="baseBackground"/>
                         <constraints>
                             <constraint firstItem="QqB-uq-LLa" firstAttribute="leading" secondItem="6yh-m8-KTU" secondAttribute="leading" id="847-W4-w7x"/>
                             <constraint firstItem="MVE-JD-0SI" firstAttribute="top" secondItem="1gz-9a-rtH" secondAttribute="top" id="852-CC-MBK"/>
@@ -637,7 +654,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="RX9-Tw-9Gi" id="mgc-sl-Xjw"/>
                         <outlet property="btnRememberMe" destination="BrE-bP-eYL" id="Sw6-WC-P2G"/>
+                        <outlet property="btnSignUp" destination="jFD-JN-SOD" id="ce0-cl-DnW"/>
                         <outlet property="txtEmail" destination="Z8T-gr-A59" id="ZkE-3p-dkL"/>
                         <outlet property="txtFullName" destination="gcV-BU-luk" id="Ve6-oB-iac"/>
                         <outlet property="txtPassword" destination="QNn-80-bzV" id="ENT-IK-e7S"/>
@@ -722,11 +741,11 @@
         <image name="googleImage" width="20" height="20"/>
         <image name="icon_eye" width="24" height="24"/>
         <image name="uncheckImage" width="106" height="148"/>
+        <namedColor name="baseBackground">
+            <color red="0.95294117647058818" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

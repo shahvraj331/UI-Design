@@ -6,4 +6,9 @@
   
 */
 
-
+"okay" = "Okay";
+"alert" = "Alert";
+"name_required" = "Name is required";
+"email_required" = "Email is required";
+"password_required" = "Password is required";
+"email_not_valid" = "Provide valid email";

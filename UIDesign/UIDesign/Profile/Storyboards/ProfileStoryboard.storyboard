@@ -3,17 +3,18 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="OpenSans-Regular.ttf">
-            <string>OpenSans-Regular</string>
-        </array>
         <array key="OpenSans-SemiBold.ttf">
             <string>OpenSans-SemiBold</string>
+        </array>
+        <array key="OpenSans-VariableFont_wdth,wght.ttf">
+            <string>OpenSans-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -351,6 +352,22 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSZ-IY-XMg">
+                                                        <rect key="frame" x="10" y="20" width="92.333333333333329" height="31"/>
+                                                        <color key="backgroundColor" name="baseBackground"/>
+                                                        <color key="tintColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                        <state key="normal" title="Log out" image="arrowtriangle.backward.fill" catalog="system">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Log out" imagePadding="5" cornerStyle="capsule">
+                                                            <imageReference key="image" image="arrowtriangle.left.fill" catalog="system" symbolScale="medium"/>
+                                                            <color key="baseForegroundColor" name="buttonBackground"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="logOutUser:" destination="q09-Yb-ICm" eventType="touchUpInside" id="ffh-pV-hYv"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="WHL-Iw-7dn" secondAttribute="trailing" id="LH1-1W-wf8"/>
@@ -359,6 +376,8 @@
                                                     <constraint firstItem="ozH-1U-ysR" firstAttribute="centerX" secondItem="3t9-c8-1bf" secondAttribute="centerX" id="P5z-is-JRE"/>
                                                     <constraint firstItem="jgC-g6-TOr" firstAttribute="leading" secondItem="3t9-c8-1bf" secondAttribute="leading" constant="20" id="Tok-pb-3Ck"/>
                                                     <constraint firstItem="MHX-2u-SNZ" firstAttribute="top" secondItem="3t9-c8-1bf" secondAttribute="top" constant="62" id="aF9-La-BHB"/>
+                                                    <constraint firstItem="CSZ-IY-XMg" firstAttribute="leading" secondItem="WHL-Iw-7dn" secondAttribute="leading" constant="10" id="cgT-oD-6fR"/>
+                                                    <constraint firstItem="CSZ-IY-XMg" firstAttribute="top" secondItem="WHL-Iw-7dn" secondAttribute="top" constant="20" id="ekA-pP-ygx"/>
                                                     <constraint firstItem="MHX-2u-SNZ" firstAttribute="centerX" secondItem="3t9-c8-1bf" secondAttribute="centerX" id="gnj-Ii-FEl"/>
                                                     <constraint firstAttribute="bottom" secondItem="ozH-1U-ysR" secondAttribute="bottom" constant="20" id="hwj-lq-qp7"/>
                                                     <constraint firstItem="ozH-1U-ysR" firstAttribute="top" secondItem="jgC-g6-TOr" secondAttribute="bottom" constant="40" id="mfl-bW-cCL"/>
@@ -396,6 +415,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLogOut" destination="CSZ-IY-XMg" id="Jv0-QT-7c7"/>
                         <outlet property="femaleRadioButton" destination="9GL-ag-yQa" id="4UA-9i-IOZ"/>
                         <outlet property="maleRadioButton" destination="cS0-ZL-07r" id="Uya-VJ-WBl"/>
                         <outlet property="phoneNumberView" destination="Z7K-n7-jwu" id="o8U-ld-bnx"/>
@@ -453,6 +473,8 @@
     </designables>
     <resources>
         <image name="Calender" width="27" height="25"/>
+        <image name="arrowtriangle.backward.fill" catalog="system" width="128" height="113"/>
+        <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
         <image name="downArrow" width="12" height="7"/>
         <image name="profileImage" width="84" height="84"/>
         <image name="profileTopImage" width="375" height="110"/>

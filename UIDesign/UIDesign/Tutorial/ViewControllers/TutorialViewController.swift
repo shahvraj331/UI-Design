@@ -34,6 +34,7 @@ class TutorialViewController: UIViewController, Storyboarded {
     
     @IBAction func nextScreenAction(_ sender: BaseButton) {
         if pageControl.currentPage == pageControl.numberOfPages - 1 {
+            UserDefaults.standard.setTutorialCompleted()
             coordinator?.startLogInScreen()
         } else {
             pageControl.currentPage = pageControl.currentPage + 1
@@ -43,6 +44,7 @@ class TutorialViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func skipTutorialAction(_ sender: UIButton) {
+        UserDefaults.standard.setTutorialCompleted()
         coordinator?.startLogInScreen()
     }
     

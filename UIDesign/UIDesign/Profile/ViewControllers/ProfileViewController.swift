@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController, Storyboarded {
     @IBOutlet weak var txtDateOfBirth: CustomTextField!
     @IBOutlet weak var txtEmailAddress: CustomTextField!
     @IBOutlet weak var txtLocation: CustomTextField!
+    @IBOutlet weak var btnLogOut: UIButton!
     
     //MARK: - UIViewController lifecycle
     override func viewDidLoad() {
@@ -31,6 +32,12 @@ class ProfileViewController: UIViewController, Storyboarded {
         setUpPhoneNumberView()
         createPickerView()
         maleRadioButton.isSelected = true
+        btnLogOut.layer.cornerRadius = 15.0
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     //MARK: - Actions
@@ -46,6 +53,11 @@ class ProfileViewController: UIViewController, Storyboarded {
             sender.isSelected = true
             maleRadioButton.isSelected = false
         }
+    }
+    
+    @IBAction func logOutUser(_ sender: UIButton) {
+        UserDefaults.standard.setUserLoggedIn(false)
+        coordinator?.finish()
     }
     
     //MARK: - File private functions

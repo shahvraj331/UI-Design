@@ -14,4 +14,10 @@ extension UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    func showDialog(_ message: String) {
+        let alert = UIAlertController(title: R.string.localizable.alert(), message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: R.string.localizable.okay(), style: UIAlertAction.Style.default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
 }//End of extension
